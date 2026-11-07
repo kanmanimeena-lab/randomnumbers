@@ -27,6 +27,11 @@ const History = (props) =>
     </button>
 
   </div>
+
+  {props.history.length === 0 && (
+    <p className="text-center text-[#6B21A8] font-bold text-xl mt-5">Ready to roll? Generate your first number!</p>
+  )}
+
 {props.history.map((item, index) => (
   <div key={index}>
     <p className="text-[#302477] font-bold border border-[#E9DDFC] bg-[#FAF7FF] mt-5 w-[40%] mx-auto p-3 rounded-lg">
